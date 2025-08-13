@@ -1,0 +1,105 @@
+# Create WordPress Header Notice Plugin
+
+Create a WordPress plugin that displays customizable header notices to website visitors with the following specifications:
+
+## Core Functionality
+
+### Display Requirements
+- Display notices at the top of every page, positioned above navigation
+- Place the markup before the closing `</body>` tag
+- Use absolute positioning to ensure the notice appears at the very top
+- Make the notice full width of the device/viewport
+- Ensure the notice doesn't interfere with existing site layout
+
+### Notice Types & Styling
+Create three predefined notice types with distinct visual styling:
+
+1. **General Notice**
+   - White text on green background
+   - Used for general announcements, updates, or positive messages
+
+2. **Warning Notice**
+   - White text on black background
+   - Used for important information or alerts
+
+3. **Error Notice**
+   - Yellow text on red background
+   - Used for critical alerts or urgent messages
+
+### Content Structure
+Each notice should support:
+- **Title**: Main heading text (required)
+- **Subtitle**: Additional descriptive text (optional)
+- Both title and subtitle should be clearly distinguishable in the design
+
+### Administrative Controls
+- Only administrators (users with `manage_options` capability) can create, edit, or delete notices
+- Provide an intuitive admin interface in the WordPress dashboard
+- Allow administrators to preview notices before publishing
+
+### Expiration System
+- Include an optional expiration date and time field
+- If expiration is set, automatically hide the notice after the specified date/time
+- If no expiration is set, display the notice indefinitely until manually disabled
+- Provide timezone-aware expiration handling
+
+## Technical Requirements
+
+### Backend Administration
+- Create an admin page under Settings or Tools menu
+- Include form fields for:
+  - Notice title (required)
+  - Notice subtitle (optional)
+  - Notice type selection (general/warning/error)
+  - Expiration date and time (optional)
+  - Enable/disable toggle
+- Implement proper form validation and sanitization
+- Save settings using WordPress options API
+
+### Frontend Display
+- Check if notice is active and not expired
+- Inject notice markup before `</body>` tag
+- Ensure notice is responsive across all device sizes
+- Make notice visually prominent but not disruptive to user experience
+
+### Security & Performance
+- Implement proper nonce verification for form submissions
+- Sanitize all user inputs
+- Escape all outputs
+- Use WordPress coding standards throughout
+- Optimize for performance (minimal database queries)
+
+## User Experience Features
+
+### Visual Design
+- Make notices eye-catching but professional
+- Ensure text is easily readable with proper contrast
+- Consider adding subtle animations or transitions
+- Include a dismiss option for users (if appropriate)
+
+### Responsive Behavior
+- Ensure notices display properly on mobile, tablet, and desktop
+- Maintain readability across all screen sizes
+- Consider how the notice affects the overall page layout
+
+## Additional Considerations
+
+### Accessibility
+- Ensure proper color contrast ratios
+- Use semantic HTML structure
+- Include appropriate ARIA labels if needed
+
+### Flexibility
+- Design the system to be easily extensible
+- Consider how additional notice types could be added in the future
+- Think about internationalization/translation support
+
+## Success Criteria
+The plugin should be:
+- Easy for administrators to use
+- Visually effective for site visitors
+- Performant and secure
+- Compatible with most WordPress themes
+- Professional in appearance and functionality
+
+Please implement this plugin following WordPress best practices, ensuring clean, maintainable code that integrates seamlessly with the WordPress ecosystem.
