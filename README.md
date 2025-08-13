@@ -31,7 +31,7 @@ This WordPress development environment showcases:
 
 1. **Clone the repository**
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/eirichmond/perfect-wordpress-ai-builder
    cd perfect-wordpress-ai-builder
    ```
 
@@ -204,7 +204,7 @@ This project is licensed under the GPL v2 or later - see the WordPress licensing
 
 ## 🎬 YouTube Channel
 
-For more WordPress development tutorials and AI-assisted coding workflows, subscribe to: **[Your YouTube Channel Name]**
+For more WordPress development tutorials and AI-assisted coding workflows, subscribe to: **https://www.youtube.com/@elliottrichmondwp**
 
 ---
 
